@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+</head>
+<body>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("public\css\tim-toomey-STqHLqMne3k-unsplash.jpg");
+            background-size: cover;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #d977c7;
+
+        }
+        h1,h2{
+            text-align: center;
+            color: #0e0d13;
+        }
+        .new{
+            text-align: center;
+        }
+        .sign{
+            
+            display: block;
+            border-radius: 10px;
+            height: auto;
+            width: 400px;
+            justify-content: space-evenly;
+            background-color: #be23a2;
+            padding: 20px;
+            height: 50%;
+            width: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+        }
+        .sign label{
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+        }
+        .sign input{
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #241010;
+            border-radius: 4px;
+        }
+        .submit{
+            width: 100%;
+            padding: 10px;
+            
+            color: #c438cc;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+
+    </style>
+    <h1>FINE-DINE-SHINE</h1>
+    <div class="sign">
+        <h2>SIGNUP</h2>
+        <form action="/signup" method="post">
+        <label for="name">NAME:</label>
+        <input type="text" name="name" placeholder="Name">
+        <label for="password">PASSWORD:</label>
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit">
+        
+    </form>
+    <div>
+         <a href="/login">Already have an account?</a>
+    </div>
+    
+    </div>
+    
+</body>
+</html>
